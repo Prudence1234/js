@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>30DaysOfScript:Inline Script</title>
+      <script>
+        console.log('Welcome to 30DaysOfJavaScript')
+      </script>
+  </head>
+  <body>
+    
+    <script>
+        let fName= ['Prudence']
+        console.log(fName) // undefined, because it is not assigned a value
+        // Declaring different variables of different data types
+        let firstName = 'Asabeneh' // first name 
+        let lastName = 'Yetayeh' // last name 
+        let country = 'Finland' // country
+        let city = 'Helsinki' // capital city
+        let age = 100 // age in years
+        let isMarried = true
+        console.log(firstName, lastName, country, city, age, isMarried)
+        let number = prompt('Enter number')
+        console.log(number)
+        let isRaining = true
+        if (isRaining) {
+        console.log('You need a rain coat.')
+        } else {
+          console.log('No need for a rain coat.')
+        }
+        // You need a rain coat.
+
+        isRaining = false
+        if (isRaining) {
+          console.log('You need a rain coat.')
+        } else {
+          console.log('No need for a rain coat.')
+        }
+      // No need for a rain coat.
+      //we do not compare non primitive data eg arrays
+      let num = [1, 2, 3]
+      console.log(num == number)  // false
+
+      let nums = [1, 2, 3]
+      let numbers = nums
+
+      console.log(nums == numbers)  // true
+
+      let userOne = {
+      name:'Asabeneh',
+      role:'teaching',
+      country:'Finland'
+      }
+
+     let userTwo = userOne
+
+     console.log(userOne == userTwo)  // true
+
+     let years = 35
+     const gravity = 9.81  // we use const for non-changing values
+     let mass = 72         
+     const PI = 3.14       // pi a geometrical constant
+     const boilingPoint = 100 // temperature in oC, boiling point of water which is a constant
+     const bodyTemp = 37      // oC average human body temperature, which is a constant
+
+     console.log(years, gravity, mass, PI, boilingPoint, bodyTemp);
+     let randomNum = Math.random()         // generates 0 to 0.999
+     let numBtnZeroAndTen = randomNum 
+
+     console.log(numBtnZeroAndTen);// this gives: min 10 and max 100.99
+     let firstname = 'Prudence'
+     let lastname = 'Momanyi'
+     let ctry = 'Germany'
+     let cty = 'Berlin'
+     let language = 'JavaScript'
+     let job = 'student'
+     let alt = 25
+     let fullName = firstname + ' ' + lastname
+
+     let personInfoTwo = `I am ${fullName}. I am ${alt}. I live in ${ctry}.`
+     let personInfoThree = `I am ${fullName}. I live in ${cty}, ${ctry}. I am a ${job}. I teach ${language}.`
+     console.log(personInfoTwo)
+     console.log(personInfoThree)
+
+     let a = 2
+     let b = 3
+     console.log(`${a} is greater than ${b}: ${a > b}`)
+
+    </script>
+    <button onclick="alert('Welcome to 30DaysOfJavaScript!')">Click Me</button>
+  </body>
+</html>
